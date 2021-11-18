@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm install @octokit/action
-
-      - uses: actions/hello-world-docker-action@v1
-        with:
-          who-to-greet: 'Mona the Octocat'
+  call-workflow-1:
+    uses: octo-org/this-repo/.github/workflows/workflow-1.yml@172239021f7ba04fe7327647b213799853a9eb89
+    with:
+      username: mona
