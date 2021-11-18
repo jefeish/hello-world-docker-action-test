@@ -7,7 +7,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.body, '/project')
+    if: contains(github.event.issue.body, '/hello')
     steps:
       - uses: actions/checkout@v2
       - run: npm install @octokit/action
